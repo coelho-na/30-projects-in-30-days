@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Yusei Magic", sans-serif;
+  background-image: url("./img/relógio.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+button {
+  background-color: #10746b;
+  padding: 10px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 7px;
+  outline-style: none;
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+button:hover {
+  background-color: #18c0b2;
+  text-transform: uppercase;
+}
+
+p {
+  color: #fff;
+  font-size: 2rem;
+}

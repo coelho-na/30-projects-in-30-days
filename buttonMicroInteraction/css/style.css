@@ -15,4 +15,39 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
 }
+
+.container__paragraph {
+  text-align: center;
+  font-weight: bold;
+  -webkit-clip-path: circle(0% at 50% 50%);
+          clip-path: circle(0% at 50% 50%);
+}
+
+.btn {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  position: relative;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 0.2em;
+  width: 10em;
+}
+
+.btn:before {
+  position: absolute;
+  content: "";
+  background: #5000bb;
+  height: 100%;
+  width: 100%;
+  top: 0.5em;
+  left: 0.5em;
+  z-index: -1;
+  border-radius: 0.2em;
+}
 /*# sourceMappingURL=style.css.map */

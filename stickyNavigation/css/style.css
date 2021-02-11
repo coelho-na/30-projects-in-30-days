@@ -75,6 +75,19 @@ body {
   transition: 0.6s;
 }
 
+.header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+
+.header.sticky .header__link {
+  color: #000;
+}
+
+.header.sticky .header__logo {
+  color: #000;
+}
+
 .banner {
   position: relative;
   width: 100%;

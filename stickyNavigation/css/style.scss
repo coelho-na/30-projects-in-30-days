@@ -58,6 +58,18 @@ body {
     font-weight: 500px;
     transition: 0.6s;
   }
+
+  &.sticky {
+    padding: 5px 100px;
+    background: #fff;
+    & .header__link {
+      color: #000;
+    }
+
+    & .header__logo {
+      color: #000;
+    }
+  }
 }
 
 .banner {

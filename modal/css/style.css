@@ -40,12 +40,15 @@ body {
           justify-content: center;
   pointer-events: none;
   opacity: 0;
-  -webkit-transition: 250ms opacity ease-in .modal __container;
-  transition: 250ms opacity ease-in .modal __container;
-  transition-background-color: white;
-  transition-width: 26rem;
-  transition-padding: 1.5rem;
-  transition-border-radius: 0.2rem;
+  -webkit-transition: 250ms opacity ease-in;
+  transition: 250ms opacity ease-in;
+}
+
+.modal__container {
+  background-color: white;
+  width: 26rem;
+  padding: 1.5rem;
+  border-radius: 0.2rem;
 }
 
 .modal__title {
@@ -67,6 +70,11 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.modal-visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 button {

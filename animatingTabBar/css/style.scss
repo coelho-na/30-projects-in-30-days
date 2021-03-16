@@ -14,10 +14,6 @@ $clr-gray700: #161d34;
 /*Border radius*/
 $radius: 2rem;
 
-/*Animation*/
-
-$animation: cubic-bexier(0, 0.76, 0.58, 1.43);
-
 /*Reseting Styles*/
 *,
 *::after,
@@ -66,7 +62,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        transition: transform 400ms $animation;
+        transition: transform 400ms ease;
         transform: scale(0);
         z-index: 1;
       }
@@ -74,7 +70,7 @@ body {
       svg {
         fill: $clr-gray400;
         width: 2rem;
-        transition: fill 400ms $animation;
+        transition: fill 400ms ease;
         z-index: 99;
         position: relative;
       }

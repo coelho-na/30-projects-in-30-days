@@ -1,6 +1,5 @@
 /* color variables */
 /*Border radius*/
-/*Animation*/
 /*Reseting Styles*/
 *,
 *::after,
@@ -64,10 +63,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: -webkit-transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
-  transition: -webkit-transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
-  transition: transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
-  transition: transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43), -webkit-transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
   -webkit-transform: scale(0);
           transform: scale(0);
   z-index: 1;
@@ -76,8 +75,8 @@ body {
 .nav__listitem svg {
   fill: #767b91;
   width: 2rem;
-  -webkit-transition: fill 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
-  transition: fill 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
+  -webkit-transition: fill 400ms ease;
+  transition: fill 400ms ease;
   z-index: 99;
   position: relative;
 }

@@ -1,5 +1,5 @@
 function showDate() {
-  let d = new Date();
-  let dateToString = d.toLocaleString();
+  let date = new Date();
+  let dateToString = date.toLocaleString();
   document.getElementById("date").innerHTML = dateToString;
 }

@@ -17,6 +17,8 @@ input.onkeyup = (event) => {
       webLink = `https://www.google.com/search?q=${userData}`;
       linkTag.setAttribute("href", webLink);
       linkTag.click();
+      input.value = " ";
+      searchInput.classList.remove("active");
     };
 
     arrayofSuggestions = suggestions.filter((data) => {
@@ -46,6 +48,8 @@ function select(element) {
     webLink = `https://www.google.com/search?q=${selectUserData}`;
     linkTag.setAttribute("href", webLink);
     linkTag.click();
+    input.value = " ";
+    searchInput.classList.remove("active");
   };
   searchInput.classList.remove("active"); // hide autocomplete box
 }
